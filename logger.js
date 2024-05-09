@@ -34,7 +34,7 @@ function formatLocalTime() {
 function logMessage(priority, message) {
     const timestamp = formatLocalTime();
     const color = getColor(priority);
-    const logEntry = `${timestamp}  >>> ${priority.toUpperCase()} | ${message}`;
+    const logEntry = `${timestamp} >>> ${priority.toUpperCase()} | ${message}`;
 
     if (priority.toLowerCase() !== 'debug') {
         console.log(color + logEntry + '\x1b[0m');
